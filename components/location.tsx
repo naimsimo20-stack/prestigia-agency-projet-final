@@ -25,7 +25,7 @@ export default function Location() {
           {/* Carte Google Maps */}
           <div className="rounded-2xl overflow-hidden border border-accent/20 shadow-2xl h-96 lg:h-full">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.735843379238!2d-7.615137560086994!3d33.53425297346743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d0056e86509%3A0x62e9c5c39ecc5ec4!2sThe%20Gold%20Center!5e0!3m2!1sen!2sma!4v1764105270751!5m2!1sen!2sma" 
+              src="https://maps.google.com/?q=Casablanca+Ain+Chock+Bld+Qods+The+Gold+Center" 
               width="100%"
               height="100%"
               style={{ border: 0 }}
