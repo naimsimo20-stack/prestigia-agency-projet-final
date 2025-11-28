@@ -8,7 +8,7 @@ export default function Location() {
   }
 
   const handleWazeClick = () => {
-    window.open("https://waze.com/ul?q=Casablanca+Ain+Chock+Bld+Qods+The+Gold+Center", "_blank")
+    window.open("https://maps.google.com/?q=Casablanca+Ain+Chock+Bld+Qods+The+Gold+Center", "_blank")
   }
 
   return (
