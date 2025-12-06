@@ -152,13 +152,13 @@ export default function RootLayout({
         },
         image: {
           "@type": "ImageObject",
-          url: "https://prestigia-agency.com/logo.png",
+          url: "https://prestigia-agency.com/icon.png",
           width: 400,
           height: 400,
         },
         logo: {
           "@type": "ImageObject",
-          url: "https://prestigia-agency.com/logo.png",
+          url: "https://prestigia-agency.com/icon.png",
           width: 400,
           height: 400,
         },
