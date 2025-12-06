@@ -24,15 +24,12 @@ export default function Location() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Carte Google Maps */}
           <div className="rounded-2xl overflow-hidden border border-accent/20 shadow-2xl h-96 lg:h-full">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.7358433835!2d-7.615142924305599!3d33.53425297335643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d0056e86509%3A0x62e9c5c39ecc5ec4!2sThe%20Gold%20Center!5e0!3m2!1sfr!2sma!4v1764305321462!5m2!1sfr!2sma" 
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.91282621481!2d-7.625546722946954!3d33.52965204514151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d0056e86509%3A0x62e9c5c39ecc5ec4!2sThe%20Gold%20Center!5e0!3m2!1sfr!2sma!4v1765044819910!5m2!1sfr!2sma"
+            width="600" 
+            height="450"
+            style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
           </div>
 
           {/* Informations de contact */}
