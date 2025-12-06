@@ -64,18 +64,17 @@ export const metadata: Metadata = {
     creator: "@prestigia_agency",
     site: "@prestigia_agency",
   },
-  icons: {
-    icon: "/images/prestigia-logo.png",
-    apple: "/images/prestigia-logo.png",
+icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
     other: [
       {
         rel: "icon",
-        url: "/prestigia-logo-32.png",
+        url: "/icon.png",
         sizes: "32x32",
         type: "image/png",
       },
     ],
-  },
   alternates: {
     canonical: "https://prestigia-agency.com",
     languages: {
