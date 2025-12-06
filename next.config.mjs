@@ -51,7 +51,7 @@ const nextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' cdn.vercel-analytics.com www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:;"
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' cdn.vercel-analytics.com www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:;frame-src 'self' https://www.google.com https://maps.google.com;"
           }
         ]
       },
