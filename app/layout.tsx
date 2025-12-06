@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     other: [
       {
         rel: "icon",
-        url: "/prestigia-logo.png",
+        url: "/prestigia-logo-32.png",
         sizes: "32x32",
         type: "image/png",
       },
