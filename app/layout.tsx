@@ -8,10 +8,30 @@ import { SkipToContent } from "@/components/accessibility-skip-link"
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
+/* ---------------------------------------------------------------------- */
+/* ✅ VIEWPORT (doit toujours être AVANT le composant React)              */
+/* ---------------------------------------------------------------------- */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  minimumScale: 1,
+  userScalable: true,
+  colorScheme: "dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
+  viewportFit: "cover",
+}
+
+/* ---------------------------------------------------------------------- */
+/* ✅ METADATA (avant JSX)                                                */
+/* ---------------------------------------------------------------------- */
 export const metadata: Metadata = {
   title: "Prestigia Agency - Agence Digital Marketing à Casablanca | SEO, Branding & Web Design",
   description:
-    "Prestigia Agency : Agence de marketing digital à Casablanca spécialisée en SEO, branding, développement web et stratégie digitale. 150+ projets réalisés, 98% de clients satisfaits. Transformez votre présence online avec nos experts.",
+    "Prestigia Agency : Agence de marketing digital à Casablanca spécialisée en SEO, branding, développement web et stratégie digitale.",
   keywords: [
     "agence marketing digital Casablanca",
     "SEO Casablanca",
@@ -37,7 +57,7 @@ export const metadata: Metadata = {
     url: "https://prestigia-agency.com",
     title: "Prestigia Agency - Excellence Digitale | Services SEO et Marketing Digital",
     description:
-      "Transformez votre présence digitale avec notre agence de marketing digital spécialisée en SEO, branding et développement web. 150+ projets réalisés.",
+      "Transformez votre présence digitale avec notre agence de marketing digital spécialisée en SEO, branding et développement web.",
     siteName: "Prestigia Agency",
     images: [
       {
@@ -64,17 +84,18 @@ export const metadata: Metadata = {
     creator: "@prestigia_agency",
     site: "@prestigia_agency",
   },
-icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+  icons: {
+    icon: "/images/prestigia-logo.png",
+    apple: "/images/prestigia-logo.png",
     other: [
       {
         rel: "icon",
-        url: "/icon.png",
+        url: "/icon-dark-32x32.png",
         sizes: "32x32",
         type: "image/png",
       },
     ],
+  },
   alternates: {
     canonical: "https://prestigia-agency.com",
     languages: {
@@ -101,162 +122,134 @@ icons: {
   },
 }
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 5,
-  minimumScale: 1,
-  userScalable: true,
-  colorScheme: "dark",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
-  ],
-  viewportFit: "cover",
-}
-
+/* ---------------------------------------------------------------------- */
+/* ✅ LAYOUT PRINCIPAL                                                    */
+/* ---------------------------------------------------------------------- */
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://prestigia-agency.com/#business",
+        name: "Prestigia Agency",
+        description:
+          "Agence de marketing digital spécialisée en SEO, branding et développement web à Casablanca",
+        url: "https://prestigia-agency.com",
+        telephone: "+212652768993",
+        email: "contact@prestigia-agency.com",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Bld Qods - The Gold Center, Étage 1, Bureau 2",
+          addressLocality: "Casablanca",
+          addressRegion: "Ain Chock",
+          postalCode: "20000",
+          addressCountry: "MA",
+        },
+        image: {
+          "@type": "ImageObject",
+          url: "https://prestigia-agency.com/logo.png",
+          width: 400,
+          height: 400,
+        },
+        logo: {
+          "@type": "ImageObject",
+          url: "https://prestigia-agency.com/logo.png",
+          width: 400,
+          height: 400,
+        },
+        sameAs: [
+          "https://www.facebook.com/prestigia",
+          "https://www.instagram.com/prestigia",
+          "https://www.linkedin.com/company/prestigia",
+        ],
+        areaServed: [
+          { "@type": "Country", name: "Morocco" },
+          { "@type": "Country", name: "France" },
+          { "@type": "Country", name: "Belgium" },
+        ],
+        serviceType: ["SEO", "Web Development", "Branding", "Digital Marketing"],
+        priceRange: "$$",
+        foundingDate: "2012",
+        numberOfEmployees: { "@type": "QuantitativeValue", value: 12 },
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "Customer Service",
+          telephone: "+212652768993",
+          email: "contact@prestigia-agency.com",
+          availableLanguage: ["en", "fr", "ar"],
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.8",
+          bestRating: "5",
+          worstRating: "1",
+          ratingCount: "150",
+        },
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://prestigia-agency.com/#organization",
+        name: "Prestigia Agency",
+        url: "https://prestigia-agency.com",
+        logo: "https://prestigia-agency.com/logo.png",
+        sameAs: [
+          "https://www.facebook.com/prestigia",
+          "https://www.instagram.com/prestigia",
+          "https://www.linkedin.com/company/prestigia",
+        ],
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://prestigia-agency.com/#website",
+        url: "https://prestigia-agency.com",
+        name: "Prestigia Agency",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: "https://prestigia-agency.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
+    ],
+  }
+
   return (
     <html lang="fr">
       <head>
-        {/* Preconnect and preload critical resources */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://wa.me" />
 
         <link rel="preload" as="image" href="/images/hero-innovation.png" />
 
+        {/* Analytics */}
         <Script src="https://cdn.vercel-analytics.com/v1/web.js" strategy="afterInteractive" />
-
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" strategy="afterInteractive" />
         <Script
           id="google-analytics"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX', {
-                page_path: window.location.pathname,
-              });
-            `,
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-XXXXXXXXXX');
+              `,
           }}
         />
 
+        {/* Schema JSON */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "LocalBusiness",
-                  "@id": "https://prestigia-agency.com/#business",
-                  name: "Prestigia Agency",
-                  description:
-                    "Agence de marketing digital spécialisée en SEO, branding et développement web à Casablanca",
-                  url: "https://prestigia-agency.com",
-                  telephone: "+212652768993",
-                  email: "contact@prestigia-agency.com",
-                  address: {
-                    "@type": "PostalAddress",
-                    streetAddress: "Bld Qods - The Gold Center, Étage 1, Bureau 2",
-                    addressLocality: "Casablanca",
-                    addressRegion: "Ain Chock",
-                    postalCode: "20000",
-                    addressCountry: "MA",
-                  },
-                  image: {
-                    "@type": "ImageObject",
-                    url: "https://prestigia-agency.com/logo.png",
-                    width: 400,
-                    height: 400,
-                  },
-                  logo: {
-                    "@type": "ImageObject",
-                    url: "https://prestigia-agency.com/logo.png",
-                    width: 400,
-                    height: 400,
-                  },
-                  sameAs: [
-                    "https://www.facebook.com/prestigia",
-                    "https://www.instagram.com/prestigia",
-                    "https://www.linkedin.com/company/prestigia",
-                  ],
-                  areaServed: [
-                    {
-                      "@type": "Country",
-                      name: "Morocco",
-                    },
-                    {
-                      "@type": "Country",
-                      name: "France",
-                    },
-                    {
-                      "@type": "Country",
-                      name: "Belgium",
-                    },
-                  ],
-                  serviceType: ["SEO", "Web Development", "Branding", "Digital Marketing", "Digital Strategy"],
-                  priceRange: "$$",
-                  foundingDate: "2012",
-                  numberOfEmployees: {
-                    "@type": "QuantitativeValue",
-                    value: 12,
-                  },
-                  contactPoint: {
-                    "@type": "ContactPoint",
-                    contactType: "Customer Service",
-                    telephone: "+212652768993",
-                    email: "contact@prestigia-agency.com",
-                    availableLanguage: ["en", "fr", "ar"],
-                  },
-                  aggregateRating: {
-                    "@type": "AggregateRating",
-                    ratingValue: "4.8",
-                    bestRating: "5",
-                    worstRating: "1",
-                    ratingCount: "150",
-                  },
-                },
-                {
-                  "@type": "Organization",
-                  "@id": "https://prestigia-agency.com/#organization",
-                  name: "Prestigia Agency",
-                  url: "https://prestigia-agency.com",
-                  logo: "https://prestigia-agency.com/logo.png",
-                  sameAs: [
-                    "https://www.facebook.com/prestigia",
-                    "https://www.instagram.com/prestigia",
-                    "https://www.linkedin.com/company/prestigia",
-                  ],
-                },
-                {
-                  "@type": "WebSite",
-                  "@id": "https://prestigia-agency.com/#website",
-                  url: "https://prestigia-agency.com",
-                  name: "Prestigia Agency",
-                  potentialAction: {
-                    "@type": "SearchAction",
-                    target: {
-                      "@type": "EntryPoint",
-                      urlTemplate: "https://prestigia-agency.com/search?q={search_term_string}",
-                    },
-                    "query-input": "required name=search_term_string",
-                  },
-                },
-              ],
-            }).replace(/[\u007F-\uFFFF]/g, (ch) => "\\u" + ("0000" + ch.charCodeAt(0).toString(16)).slice(-4)),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`font-sans antialiased`}>
-        {/* Add skip-to-content link for keyboard navigation */}
+
+      <body className="font-sans antialiased">
         <SkipToContent />
         <main id="main-content">{children}</main>
       </body>
