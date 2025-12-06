@@ -24,15 +24,14 @@ export default function Location() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Carte Google Maps */}
           <div className="rounded-2xl overflow-hidden border border-accent/20 shadow-2xl h-96 lg:h-full">
-         <iframe
-              src="https://maps.google.com/maps?q=The%20Gold%20Center%20Casablanca&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+        <iframe 
+  width="100%" 
+  height="100%" 
+  frameborder="0" 
+  scrolling="no" 
+  src="https://www.openstreetmap.org/export/embed.html?bbox=-7.6180%2C33.5325%2C-7.6120%2C33.5360&layer=mapnik&marker=33.53425,-7.61514">
+</iframe>
+
           </div>
 
           {/* Informations de contact */}
