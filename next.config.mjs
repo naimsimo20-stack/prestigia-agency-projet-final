@@ -13,7 +13,6 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: true,
   experimental: {
     optimizePackageImports: ["@radix-ui/dialog", "lucide-react", "framer-motion"],
   },
