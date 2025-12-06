@@ -24,13 +24,15 @@ export default function Location() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Carte Google Maps */}
           <div className="rounded-2xl overflow-hidden border border-accent/20 shadow-2xl h-96 lg:h-full">
-       <iframe 
-  width="100%" 
-  height="100%" 
-  frameborder="0" 
-  scrolling="no" 
-  src="https://www.openstreetmap.org/export/embed.html?bbox=-7.6180%2C33.5325%2C-7.6120%2C33.5360&layer=mapnik&marker=33.53425,-7.61514">
-</iframe>
+       <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.7358433835!2d-7.615142924305599!3d33.53425297335643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d0056e86509%3A0x62e9c5c39ecc5ec4!2sThe%20Gold%20Center!5e0!3m2!1sfr!2sma!4v1764305321462!5m2!1sfr!2sma" 
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
 
 
           </div>
