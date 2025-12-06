@@ -85,12 +85,12 @@ export const metadata: Metadata = {
     site: "@prestigia_agency",
   },
   icons: {
-    icon: "/images/prestigia-logo.png",
-    apple: "/images/prestigia-logo.png",
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
     other: [
       {
         rel: "icon",
-        url: "/icon-dark-32x32.png",
+        url: "/icon.png",
         sizes: "32x32",
         type: "image/png",
       },
