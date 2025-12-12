@@ -57,7 +57,7 @@ export default function Team() {
           </div>
 
           {/* Quote Section */}
-          <div className="lg:col-span-1 h-full flex items-center">
+          <div className="lg:col-span-1 h-full flex items-center -mt-10">
             <div className="bg-gradient-to-br from-accent/10 to-primary/5 border border-accent/20 rounded-xl p-8 backdrop-blur-sm">
               <div className="text-accent text-4xl mb-4 font-bold">"</div>
               <p className="text-lg text-foreground font-light mb-6 leading-relaxed">
