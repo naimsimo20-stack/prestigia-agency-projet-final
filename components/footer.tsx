@@ -32,10 +32,10 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { label: "Facebook", href: "https://facebook.com/prestigia" },
-    { label: "Instagram", href: "https://instagram.com/prestigia" },
-    { label: "LinkedIn", href: "https://linkedin.com/company/prestigia" },
-    { label: "Twitter", href: "https://twitter.com/prestigia" },
+    { label: "Facebook", href: "https://web.facebook.com/profile.php?id=61584253697576&locale=fr_FR" },
+    { label: "Instagram", href: "https://instagram.com/prestigia__agency" },
+    { label: "LinkedIn", href: "https://linkedin.com/company/prestigia agency" },
+    { label: "Twitter", href: "https://twitter.com/prestigia agency" },
   ]
 
   const handleNavClick = (href: string) => {
