@@ -143,7 +143,7 @@ Prêt à rencontrer l'équipe ?`,
     keywords: ["contact", "joindre", "appeler", "email", "téléphone", "adresse", "comment", "horaires", "localisation"],
     response: (task: InternalTask) => `✅ Comment nous joindre :
 
-📱 Téléphone : +212 652 768 993
+📱 Téléphone : +212 719 144-144
 📧 Email : contact@prestigia-agency.com
 💬 WhatsApp : Disponible 24/7
 📍 Localisation : Casablanca, Ain Chock
