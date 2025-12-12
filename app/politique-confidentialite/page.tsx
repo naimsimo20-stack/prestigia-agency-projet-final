@@ -93,7 +93,7 @@ export default function PolitiqueConfidentialite() {
               <br />
               <strong>Email:</strong> contact@prestigia-agency.com
               <br />
-              <strong>Téléphone:</strong> +212 652 768 993
+              <strong>Téléphone:</strong> +212 719 144-144
             </p>
           </section>
 
