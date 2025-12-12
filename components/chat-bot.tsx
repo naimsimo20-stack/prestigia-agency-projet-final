@@ -514,7 +514,7 @@ Quel domaine vous intéresse le plus ?`,
           "mailto:contact@prestigia-agency.com?subject=Demande%20d'information%20-%20Prestigia%20Agency&body=Bonjour%20Prestigia%20Agency"
         break
       case "maps":
-        window.location.href = "https://maps.google.com/?q=Bld+Qods+The+Gold+Center+Casablanca+Ain+Chock"
+        window.location.href = "https://maps.app.goo.gl/89SPsYXdmFUq5wWZA"
         break
     }
   }
