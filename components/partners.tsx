@@ -22,10 +22,10 @@ export default function Partners() {
       image: "/images/barca.png",
     },
     {
-      name: "Platimat",
+      name: "Platima",
       category: "Matériaux de Construction",
       description: "Acteur clé dans la vente de matériaux et solutions pour le BTP.",
-      image: "/images/platimat.png",
+      image: "/images/platima.png",
     },
   ]
 
