@@ -21,7 +21,7 @@ export default function MentionsLegales() {
               <br />
               <strong>Siège social:</strong> Bld Qods The Gold Center, Étage 1, Bureau 2, Casablanca, Ain Chock, Maroc
               <br />
-              <strong>Téléphone:</strong> +212 652 768 993
+              <strong>Téléphone:</strong> +212 719 144-144
               <br />
               <strong>Email:</strong> contact@prestigia-agency.com
             </p>
