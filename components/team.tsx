@@ -31,7 +31,7 @@ export default function Team() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 items-center mb-16">
+        <div className="grid lg:grid-cols-3 gap-8 items-start mb-16">
           {/* Owners Cards */}
           <div className="lg:col-span-2 grid md:grid-cols-2 gap-6">
             {owners.map((owner, index) => (
@@ -44,7 +44,7 @@ export default function Team() {
                     src={owner.image || "/placeholder.svg"}
                     alt={owner.name}
                     width={96}
-                    height={90}
+                    height={96}
                     className="w-full h-full object-cover"
                   />
                 </div>
