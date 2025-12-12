@@ -44,7 +44,7 @@ export default function Team() {
                     src={owner.image || "/placeholder.svg"}
                     alt={owner.name}
                     width={96}
-                    height={96}
+                    height={90}
                     className="w-full h-full object-cover"
                   />
                 </div>
