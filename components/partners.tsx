@@ -7,25 +7,25 @@ export default function Partners() {
       name: "Smetec",
       category: "Aménagement Sportif",
       description: "Partenaire spécialisé dans la conception et l’aménagement d’espaces sportifs.",
-      image: "/images/smetec.PNG",
+      image: "/images/smetec.png",
     },
     {
       name: "Arena ville verte ",
       category: "Location de Terrains (Foot, Padel, Basket)",
       description: "Entreprise spécialisée dans la location de terrains multisports.",
-      image: "/images/arena.PNG",
+      image: "/images/arena.png",
     },
     {
       name: "Barca academy maroc",
       category: "Académie de Football",
       description: "Centre de formation dédié au développement des jeunes talents.",
-      image: "/images/barca.PNG",
+      image: "/images/barca.png",
     },
     {
       name: "Platimat",
       category: "Matériaux de Construction",
       description: "Acteur clé dans la vente de matériaux et solutions pour le BTP.",
-      image: "/images/platimat.PNG",
+      image: "/images/platimat.png",
     },
   ]
 
