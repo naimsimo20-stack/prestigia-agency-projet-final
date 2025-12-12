@@ -4,27 +4,27 @@ import Image from "next/image"
 export default function Partners() {
   const partners = [
     {
-      name: "TechPartner 1",
-      category: "Développement",
-      description: "Leader en solutions technologiques innovantes",
+      name: "Smetec",
+      category: "Aménagement Sportif",
+      description: "Partenaire spécialisé dans la conception et l’aménagement d’espaces sportifs.",
       image: "/images/partner-tech.jpg",
     },
     {
-      name: "TechPartner 2",
-      category: "Design",
-      description: "Excellence en conception graphique et UX/UI",
+      name: "Arena ville verte ",
+      category: "Location de Terrains (Foot, Padel, Basket)",
+      description: "Entreprise spécialisée dans la location de terrains multisports.",
       image: "/images/partner-design.jpg",
     },
     {
-      name: "TechPartner 3",
-      category: "Marketing",
-      description: "Spécialiste en stratégie marketing digital",
+      name: "Barca academy maroc",
+      category: "Académie de Football",
+      description: "Centre de formation dédié au développement des jeunes talents.",
       image: "/images/partner-marketing.jpg",
     },
     {
-      name: "TechPartner 4",
-      category: "Hosting",
-      description: "Infrastructure cloud sécurisée et performante",
+      name: "Platimat",
+      category: "Matériaux de Construction",
+      description: "Acteur clé dans la vente de matériaux et solutions pour le BTP.",
       image: "/images/partner-hosting.jpg",
     },
   ]
@@ -37,7 +37,7 @@ export default function Partners() {
             Nos <span className="text-accent">Partenaires</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Nous collaborons avec les meilleurs partenaires pour offrir des solutions d'excellence à nos clients.
+            Nous sommes fiers d’accompagner des clients d’envergure qui nous font confiance pour leur croissance digitale.
           </p>
         </div>
 
@@ -66,8 +66,8 @@ export default function Partners() {
         <div className="mt-16 bg-gradient-to-r from-accent/10 to-primary/5 border border-accent/20 rounded-xl p-12 text-center">
           <h3 className="text-2xl font-bold text-foreground mb-4">Devenir Partenaire</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Intéressé par un partenariat stratégique avec Prestigia Agency? Contactez-nous pour explorer les
-            opportunités de collaboration.
+           Vous souhaitez rejoindre nos clients et bénéficier d’un accompagnement digital d’excellence ?
+            Contactez-nous pour construire ensemble un partenariat stratégique.
           </p>
           <a
             href="mailto:contact@prestigia-agency.com?subject=Demande%20de%20partenariat%20-%20Prestigia%20Agency"
