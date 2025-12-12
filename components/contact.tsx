@@ -102,7 +102,7 @@ export default function Contact() {
           >
             <Phone className="w-10 h-10 text-accent mx-auto mb-4" />
             <h3 className="text-foreground font-bold mb-2">Téléphone</h3>
-            <p className="text-muted-foreground hover:text-accent transition-colors">+212 652 768 993</p>
+            <p className="text-muted-foreground hover:text-accent transition-colors">+212 719 144-144</p>
             <p className="text-xs text-accent/60 mt-2">Appeler</p>
           </div>
 
