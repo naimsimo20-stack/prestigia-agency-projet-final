@@ -151,7 +151,7 @@ export default function Footer() {
                   <div className="text-left flex-grow min-w-0">
                     <p className="text-muted-foreground text-xs">Téléphone</p>
                     <p className="text-foreground text-sm hover:text-accent transition-colors truncate">
-                      +212 652 768 993
+                      +212 719 144-144
                     </p>
                   </div>
                 </button>
