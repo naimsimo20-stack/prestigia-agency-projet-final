@@ -15,7 +15,7 @@ export default function Team() {
       role: "Co-Founder & Expert Digital",
       specialty: "Shooting, Stratégie Digital & Performance",
       expertise: "6 ans d'expérience",
-      image: "/images/founder-ahmed.JPG",
+      image: "/images/founder-ahmed.png",
     },
   ]
 
