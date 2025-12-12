@@ -63,7 +63,7 @@ export default function Location() {
                 <Phone className="w-8 h-8 text-accent flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Téléphone</h3>
-                  <p className="text-muted-foreground hover:text-accent transition-colors">+212 652 768 993</p>
+                  <p className="text-muted-foreground hover:text-accent transition-colors">+212 719 144-144</p>
                   <p className="text-sm text-accent/70 mt-1">Cliquez pour WhatsApp</p>
                 </div>
               </div>
