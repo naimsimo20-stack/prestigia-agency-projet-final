@@ -13,7 +13,7 @@ export default function Team() {
     {
       name: "Ahmed Ghiwane",
       role: "Co-Founder & Expert Digital",
-      specialty: "Stratégie Digital & Performance",
+      specialty: "Shooting, Stratégie Digital & Performance",
       expertise: "6 ans d'expérience",
       image: "/images/founder-ahmed.jpg",
     },
