@@ -163,8 +163,8 @@ export default function RootLayout({
           height: 400,
         },
         sameAs: [
-          "https://www.facebook.com/prestigia",
-          "https://www.instagram.com/prestigia",
+          "https://web.facebook.com/profile.php?id=61584253697576&locale=fr_FR",
+          "https://www.instagram.com/prestigia__agency",
           "https://www.linkedin.com/company/prestigia",
         ],
         areaServed: [
@@ -198,8 +198,8 @@ export default function RootLayout({
         url: "https://prestigia-agency.com",
         logo: "https://prestigia-agency.com/logo.png",
         sameAs: [
-          "https://www.facebook.com/prestigia",
-          "https://www.instagram.com/prestigia",
+          "https://web.facebook.com/profile.php?id=61584253697576&locale=fr_FR",
+          "https://www.instagram.com/prestigia__agency",
           "https://www.linkedin.com/company/prestigia",
         ],
       },
