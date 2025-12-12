@@ -68,7 +68,7 @@ export default function Contact() {
   }
 
   const handleLocationClick = () => {
-    window.location.href = "https://maps.google.com/?q=Bld+Qods+The+Gold+Center+Casablanca+Ain+Chock"
+    window.location.href = "https://maps.app.goo.gl/89SPsYXdmFUq5wWZA"
   }
 
   return (
