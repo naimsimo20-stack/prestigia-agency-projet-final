@@ -8,14 +8,14 @@ export default function Team() {
       role: "Co-Founder & Développeur Informatique",
       specialty: "Développement Web & Architecture",
       expertise: "5 ans d'expérience",
-      image: "/images/founder-abelkader.JPG",
+      image: "/images/founder-abelkader.avif",
     },
     {
       name: "Ahmed Ghiwane",
       role: "Co-Founder & Expert Digital",
       specialty: "Shooting, Stratégie Digital & Performance",
       expertise: "6 ans d'expérience",
-      image: "/images/founder-ahmed.png",
+      image: "/images/founder-ahmed.avif",
     },
   ]
 
