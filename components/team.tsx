@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Team() {
   const owners = [
     {
-      name: "Abelkader Naim",
+      name: "Abdelkader Naim",
       role: "Co-Founder & Développeur Informatique",
       specialty: "Développement Web & Architecture",
       expertise: "5 ans d'expérience",
