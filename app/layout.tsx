@@ -224,7 +224,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://wa.me" />
 
-        <link rel="preload" as="image" href="/images/hero-innovation.png" />
+        <link rel="preload" as="image" href="/images/hero-innovation.avif" />
 
         {/* Analytics */}
         <Script src="https://cdn.vercel-analytics.com/v1/web.js" strategy="afterInteractive" />
